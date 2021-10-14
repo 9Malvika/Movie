@@ -1,4 +1,4 @@
---INSERT records into ARTIST table
+--Inserting records into ARTIST table
 
 INSERT INTO ARTIST VALUES(101,'Aamir Khan', 'Anushka Sharma');
 INSERT INTO ARTIST VALUES(102,'Zachary Levi', 'Mandy Moore');
@@ -10,7 +10,7 @@ SELECT * FROM ARTIST;
 
 -----------------------------
 
---INSERT records into DIRECTOR table
+--Inserting records into DIRECTOR table
 
 INSERT INTO DIRECTOR VALUES(201,'Rajkumar Hirani');
 INSERT INTO DIRECTOR VALUES(202,'Nathan Greno');
@@ -22,7 +22,7 @@ SELECT * FROM DIRECTOR;
 
 ------------------------------
 
---INSERT records into MOVIE table
+--Inserting records into MOVIE table
 
 INSERT INTO MOVIE VALUES(1001,'PK',2014,201);
 INSERT INTO MOVIE VALUES(1002,'TANGLED',2010,202);
