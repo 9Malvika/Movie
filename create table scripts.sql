@@ -31,16 +31,3 @@ FOREIGN KEY (DIR_ID) REFERENCES DIRECTOR(DIR_ID));
 DESC MOVIE;
 
 ----------------------------
-
---Create Table MOVIE_CAST with Primary Key as MOV_ID and ACT_ID and Foreign Key ACT_ID and MOV_ID referring ACTOR and MOVIES tables respectively
-
-CREATE TABLE CAST(
-ART_ID INTEGER,
-MOV_ID INTEGER,
-PRIMARY KEY (ART_ID,MOV_ID),
-FOREIGN KEY (ART_ID) REFERENCES ACTOR(ART_ID),
-FOREIGN KEY (MOV_ID) REFERENCES MOVIES(MOV_ID));
-
-DESC CAST;
-
-----------------------------
