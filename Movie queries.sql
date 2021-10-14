@@ -16,14 +16,19 @@ WHERE DIR_NAME='Rajkumar Hirani');
 
 --Query 2
 
--- display all the actress who acted in a movie between 2009 and 2012
--- we use ACTRESS_NAME field of ARTIST table as well as the MOV_YEAR field of the MOVIE table.
--- for joining these two tables we use a third table CAST using ART_ID and MOV_ID.
+-- find the movie directed by the director whose first name is 'Bryon' and last name is 'Howard'.
 
-SELECT A.ACTRESS_NAME, M.MOV_NAME, M.MOV_YEAR
-FROM ARTIST A, CAST C, MOVIE M
-WHERE A.ART_ID = C.ART_ID
-AND C.MOV_ID = M.MOV_ID
-AND M.MOV_YEAR BETWEEN 2009 AND 2012
+SELECT MOV_NAME
+FROM MOVIE
+WHERE MOV_ID =(
+  SELECT MOV_ID
+  FROM MOVIE
+  WHERE DIR_ID = (
+    SELECT DIR_ID
+    FROM DIRECTOR
+    WHERE DIR_FNAME='Bryon' AND DIR_LNAME ='Howard'));
+    
+----------------------------------------------------------------------------
+
 
 
