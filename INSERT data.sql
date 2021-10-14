@@ -8,7 +8,7 @@ INSERT INTO ARTIST VALUES(105,'Ryan Reynolds', 'Morena Baccarin');
 
 SELECT * FROM ARTIST;
 
------------------------------
+----------------------------------------------------------------------
 
 --Inserting records into DIRECTOR table
 
@@ -20,7 +20,7 @@ INSERT INTO DIRECTOR VALUES(205,'Tim Miller');
 
 SELECT * FROM DIRECTOR;
 
-------------------------------
+---------------------------------------------------------
 
 --Inserting records into MOVIE table
 
@@ -32,17 +32,4 @@ INSERT INTO MOVIE VALUES(1005,'DEADPOOL',2016,205);
 
 SELECT * FROM MOVIE;
 
------------------------------
-
---Inserting records into MOVIE_CAST table
-
-INSERT INTO CAST VALUES(101,1001);
-INSERT INTO CAST VALUES(101,1001);
-INSERT INTO CAST VALUES(103,1003);
-INSERT INTO CAST VALUES(103,1003);
-INSERT INTO CAST VALUES(104,1004);
-
-SELECT * FROM CAST;
-
------------------------------
-
+----------------------------------------------------------
