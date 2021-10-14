@@ -29,5 +29,57 @@ WHERE MOV_ID =(
     WHERE DIR_FNAME='Bryon' AND DIR_LNAME ='Howard'));
     
 ----------------------------------------------------------------------------
+--Query 3
 
+--find the name and year of the movie
 
+SELECT MOV_NAME, MOV_YEAR
+FROM MOVIE;
+
+-----------------------------------------------------------------------------
+--Query 4
+
+-- find when the movie 'PK' released
+
+SELECT MOV_YEAR
+FROM MOVIE
+WHERE MOV_NAME = 'PK';
+
+----------------------------------------------------------------------------
+--Query 5
+
+-- find the movie which was released in the year 2013
+
+SELECT MOV_NAME
+FROM MOVIE
+WHERE MOV_YEAR = 2013;
+
+-----------------------------------------------------------------------------
+--Query 6
+
+-- find those movies which was released before 2010
+
+SELECT MOV_NAME
+FROM MOVIE
+WHERE MOV_YEAR<2010;
+
+------------------------------------------------------------------------------
+--Query 7
+
+-- find the movies with mov_id 201, 202, 204
+
+SELECT MOV_NAME
+FROM MOVIE
+WHERE MOV_ID IN (201, 202, 204);
+
+--------------------------------------------------------------------------
+-- Query 8
+
+-- find those movies titles, which include the words 'Drishyam' . Sort the result set in ascending order by year of movie
+
+SELECT MOV_ID, MOV_NAME, MOV_YEAR
+FROM MOVIE
+WHERE MOV_NAME LIKE '%Drishyam%'
+ORDER BY MOV_YEAR ASC;
+
+----------------------------------------------------------------------------
