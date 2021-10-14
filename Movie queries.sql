@@ -66,11 +66,11 @@ WHERE MOV_YEAR<2010;
 ------------------------------------------------------------------------------
 --Query 7
 
--- find the movies with mov_id 201, 202, 204
+-- find the movies with mov_id 1001, 1002, 1004
 
 SELECT MOV_NAME
 FROM MOVIE
-WHERE MOV_ID IN (201, 202, 204);
+WHERE MOV_ID IN (1001, 1002, 1004);
 
 --------------------------------------------------------------------------
 -- Query 8
